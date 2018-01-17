@@ -424,7 +424,7 @@ conjElimEval = do
 
 test :: IO ()
 test = do
-    contents <- readFile "C:\\Users\\Benjamin\\assignment3\\app\\proof2.txt"
+    contents <- readFile "proof2.txt"
     let parsed = parse proof "" contents
     let out = if (isRight parsed)
               then do
@@ -442,7 +442,7 @@ test = do
 
 main2 :: IO ()
 main2 = do
-    contents <- readFile "C:\\Users\\Benjamin\\assignment3\\app\\proof2.txt"
+    contents <- readFile "proof2.txt"
     let parsed = parse proof "" contents
     let (Right rightparsed) = parsed
     let l = listProof rightparsed
